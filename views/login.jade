@@ -1,0 +1,24 @@
+extends ./layout.jade
+block contenido
+    
+    div(class="container")
+        div(class="panel panel-primary")
+            div(class="panel-heading")
+                    h3(class="panel-title") Ingresa a tu cuenta
+            div
+            div(class="panel-body")
+                form(action="/sessions", method="post")
+                    div(class="form-group")
+                        label(for="email") Introduce tu email
+                        input(type="email", name="email", id="email" placeholder="tucorreo@dominio.com" class="form-control")
+                        label(for="pass") Introduce tu password
+                        input(type="password", name="pass", id="pass" class="form-control")
+                        br
+                        input(type="submit" value="Iniciar sesión" class="btn btn-success")
+                    div
+                    
+            div
+        div
+    div    
+    
+    
